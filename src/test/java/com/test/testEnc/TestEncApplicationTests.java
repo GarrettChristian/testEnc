@@ -24,6 +24,15 @@ public class TestEncApplicationTests {
 			assert ("PlEaSeEnCrYpT".equals(aesEncryption.decrypt(secretKeY)));
 			System.out.println("Finished dycrypting:" + (System.currentTimeMillis() - start));
 
+			System.out.println("2nd");
+
+			start = System.currentTimeMillis();
+			secretKeY = aesEncryption.encyrpt("PlEaSeEnCrYpT");
+			System.out.println("encrypted: " + secretKeY);
+			System.out.println("encryt time: " + (System.currentTimeMillis() - start));
+			assert ("PlEaSeEnCrYpT".equals(aesEncryption.decrypt(secretKeY)));
+			System.out.println("Finished dycrypting:" + (System.currentTimeMillis() - start));
+
 		} catch (Exception e) {
 			assert (false);
 		}
