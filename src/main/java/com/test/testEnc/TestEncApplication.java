@@ -1,0 +1,13 @@
+package com.test.testEnc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TestEncApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TestEncApplication.class, args);
+	}
+
+}
